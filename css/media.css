@@ -1,0 +1,130 @@
+/* About Section Styles */
+.about_section {
+  background: linear-gradient(45deg, #1a1a1a, #2a2a2a);
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.img-box {
+  position: relative;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.img-box:hover {
+  transform: translateY(-10px);
+}
+
+.img-box img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.detail-box {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  margin-top: 20px;
+}
+
+.y {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  padding: 25px;
+  height: 100%;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.z {
+  text-align: left;
+  color: white;
+}
+
+.x {
+  width: 50px;
+  height: 3px;
+  background: #f1db25;
+  margin: 10px 0;
+}
+
+/* Mission and Vision Section */
+.de {
+  background: linear-gradient(45deg, #2a2a2a, #1a1a1a);
+  padding: 80px 0;
+}
+
+.fe {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+}
+
+.ca {
+  color: #f1db25;
+  margin-bottom: 30px;
+  position: relative;
+  display: inline-block;
+}
+
+.ca::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 0;
+  width: 60%;
+  height: 3px;
+  background: #f1db25;
+}
+
+/* Responsive Design */
+@media (max-width: 991px) {
+  .about_section {
+    padding: 60px 0;
+  }
+  
+  .detail-box {
+    margin-top: 30px;
+  }
+  
+  .y {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .heading_container h2 {
+    font-size: 2rem;
+  }
+  
+  .about_section {
+    padding: 40px 0;
+  }
+  
+  .detail-box {
+    padding: 20px;
+  }
+  
+  .y {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 576px) {
+  .heading_container h2 {
+    font-size: 1.8rem;
+  }
+  
+  .detail-box h4 {
+    font-size: 1.3rem;
+  }
+  
+  .ca {
+    font-size: 1.6rem;
+  }
+}
